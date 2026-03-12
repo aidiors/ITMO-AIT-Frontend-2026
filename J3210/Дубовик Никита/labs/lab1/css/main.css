@@ -1,0 +1,48 @@
+.theme-toggle i {
+    width: 1.25em;
+    text-align: center;
+    display: inline-block;
+}
+
+.theme-toggle .fa-sun {
+    display: inline-block;
+}
+.theme-toggle .fa-moon {
+    display: none;
+}
+
+[data-bs-theme="dark"] .theme-toggle .fa-sun {
+    display: none;
+}
+[data-bs-theme="dark"] .theme-toggle .fa-moon {
+    display: inline-block;
+}
+
+.dropdown-toggle .fa-chevron-down {
+    transition: transform 0.2s ease;
+}
+
+.dropdown-toggle.show .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+#accountDropdown + .dropdown-menu {
+    margin-top: 20px;
+}
+
+.dropdown-item {
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    transform: translateX(4px);
+}
+
+footer a {
+    transition: all 0.2s ease-in-out;
+}
+
+footer a:hover {
+    opacity: 1 !important;
+    color: #fff !important;
+}
