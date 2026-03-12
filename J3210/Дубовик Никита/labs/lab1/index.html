@@ -195,6 +195,150 @@
 </footer>
 
 
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+            <div class="modal-header border-bottom-0 pb-0">
+                <h5 class="modal-title fw-bold" id="loginModalLabel">
+                    <i class="fa-solid fa-right-to-bracket text-primary me-2"></i>Вход в аккаунт
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body pt-4">
+                <form id="loginForm" novalidate>
+                    <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="loginEmail"
+                               placeholder="name@example.com" required>
+                        <div class="invalid-feedback">Пожалуйста, введите корректный email</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="loginPassword" class="form-label">Пароль</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="loginPassword"
+                                   placeholder="••••••••" required minlength="6">
+                            <button class="btn btn-outline-secondary toggle-password"
+                                    type="button" data-target="loginPassword">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <div class="invalid-feedback">Пароль должен содержать минимум 6 символов</div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Запомнить меня</label>
+                        </div>
+                        <a href="#" class="text-decoration-none text-primary small">Забыли пароль?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 py-2">
+                        <i class="fa-solid fa-right-to-bracket me-2"></i>Войти
+                    </button>
+                </form>
+                <div class="text-center mt-4">
+                    <span class="text-muted small">Нет аккаунта?</span>
+                    <button class="btn btn-link text-decoration-none p-0 ms-1"
+                            data-bs-toggle="modal" data-bs-target="#registerModal"
+                            data-bs-dismiss="modal">
+                        Зарегистрироваться
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+            <div class="modal-header border-bottom-0 pb-0">
+                <h5 class="modal-title fw-bold" id="registerModalLabel">
+                    <i class="fa-solid fa-user-plus text-primary me-2"></i>Создать аккаунт
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body pt-4">
+                <form id="registerForm" novalidate>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="registerName" class="form-label">Имя</label>
+                            <input type="text" class="form-control" id="registerName"
+                                   placeholder="Никита" required>
+                            <div class="invalid-feedback">Пожалуйста, введите ваше имя</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="registerSurname" class="form-label">Фамилия</label>
+                            <input type="text" class="form-control" id="registerSurname"
+                                   placeholder="Дубовик" required>
+                            <div class="invalid-feedback">Пожалуйста, введите вашу фамилию</div>
+                        </div>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="registerEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="registerEmail"
+                               placeholder="name@example.com" required>
+                        <div class="invalid-feedback">Пожалуйста, введите корректный email</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="registerPassword" class="form-label">Пароль</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="registerPassword"
+                                   placeholder="Минимум 6 символов" required minlength="6">
+                            <button class="btn btn-outline-secondary toggle-password"
+                                    type="button" data-target="registerPassword">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <div class="invalid-feedback">Пароль должен содержать минимум 6 символов</div>
+                        </div>
+                        <div class="form-text small">
+                            <i class="fa-solid fa-circle-info me-1"></i>
+                            Используйте буквы, цифры и специальные символы
+                            <div class="password-strength mt-2">
+                                <div class="strength-bar"></div>
+                            </div>
+                            <small class="strength-text text-muted">Слабый пароль</small>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="registerConfirm" class="form-label">Подтвердите пароль</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="registerConfirm"
+                                   placeholder="Повторите пароль" required>
+                            <button class="btn btn-outline-secondary toggle-password"
+                                    type="button" data-target="registerConfirm">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <div class="invalid-feedback">Пароли не совпадают</div>
+                        </div>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                        <label class="form-check-label small" for="agreeTerms">
+                            Я согласен с <a href="#" class="text-primary">условиями использования</a>
+                            и <a href="#" class="text-primary">политикой конфиденциальности</a>
+                        </label>
+                        <div class="invalid-feedback d-block">
+                            Необходимо принять условия использования
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 py-2">
+                        <i class="fa-solid fa-user-plus me-2"></i>Зарегистрироваться
+                    </button>
+                </form>
+                <div class="text-center mt-4">
+                    <span class="text-muted small">Уже есть аккаунт?</span>
+                    <button class="btn btn-link text-decoration-none p-0 ms-1"
+                            data-bs-toggle="modal" data-bs-target="#loginModal"
+                            data-bs-dismiss="modal">
+                        Войти
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script type="text/javascript" src='js/main.js'></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
