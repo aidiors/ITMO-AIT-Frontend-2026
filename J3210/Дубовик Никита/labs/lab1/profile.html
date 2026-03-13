@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vital Courses</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+
+<body class="d-flex flex-column min-vh-100">
+
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top shadow-sm">
+        <a class="navbar-brand fw-bold ms-3" href="index.html">
+            <i class="fa-solid fa-graduation-cap me-1 text-primary"></i>
+            Vital <span class="text-primary">Courses</span>
+        </a>
+
+        <button class="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+                aria-controls="navbarContent"
+                aria-expanded="false"
+                aria-label="Переключить навигацию">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">О платформе</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Преподавателям</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог курсов</a></li>
+            </ul>
+
+
+            <div class="d-flex align-items-center gap-2 ms-lg-1">
+                <button class="btn btn-outline-primary px-3 d-flex align-items-center transition-hover"
+                        data-bs-toggle="modal"
+                        data-bs-target="#loginModal">
+                    <i class="fa-solid fa-right-to-bracket me-2"></i> Вход
+                </button>
+
+                <button class="btn btn-primary px-3 shadow-sm d-flex align-items-center transition-hover"
+                        data-bs-toggle="modal"
+                        data-bs-target="#registerModal">
+                    <i class="fa-solid fa-user-plus me-2"></i> Регистрация
+                </button>
+            </div>
+        </div>
+
+        <div class="dropdown position-relative me-3">
+            <a class="dropdown-toggle d-flex align-items-center text-body text-decoration-none"
+               href="#" id="accountDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="m-2 d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-user text-secondary"></i>
+                </div>
+                <span class="fw-medium text-body">Профиль</span>
+                <i class="fa-solid fa-chevron-down ms-2 fa-xs text-muted"></i>
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-end shadow-lg">
+                <li>
+                    <a class="dropdown-item fw-semibold py-2" href="profile.html"><i class="fa-solid fa-id-card me-2 text-primary"></i>Личный кабинет</a>
+                </li>
+
+                <li>
+                    <a class="dropdown-item fw-semibold py-2" href="teacher-profile.html"><i class="fa-solid fa-chalkboard-user me-2 text-primary"></i>Личный кабинет преподавателя</a>
+                </li>
+
+                <li><hr class="dropdown-divider"></li>
+
+                <li>
+                    <a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Настройки</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#"><i class="fa-solid fa-circle-question me-2"></i>Помощь и поддержка</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#"><i class="fa-solid fa-bell me-2"></i>Уведомления</a>
+                </li>
+
+                <li><hr class="dropdown-divider"></li>
+
+                <li>
+                    <a class="dropdown-item text-danger" href="#"><i class="fa-solid fa-right-from-bracket me-2"></i>Выйти</a>
+                </li>
+            </ul>
+        </div>
+
+        <button class="btn btn-outline-secondary theme-toggle me-3" id="themeToggle" aria-label="Переключить тему">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </nav>
+</header>
+
+
+<footer class="mt-auto py-5 bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <h5 class="text-uppercase fw-bold mb-3">
+                    <i class="fa-solid fa-graduation-cap me-2"></i>Курсы
+                </h5>
+                <ul class="list-unstyled d-flex flex-column gap-2">
+                    <li><a href="#" class="text-white text-decoration-none opacity-75">Deep Learning</a></li>
+                    <li><a href="#" class="text-white text-decoration-none opacity-75">NLP</a></li>
+                    <li><a href="#" class="text-white text-decoration-none opacity-75">Computer Vision</a></li>
+                    <li><a href="#" class="text-white text-decoration-none opacity-75">Reinforcement Learning</a></li>
+                    <li><a href="#" class="text-white text-decoration-none opacity-75">Generative AI</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <h5 class="text-uppercase fw-bold mb-3">
+                    <i class="fa-solid fa-circle-question me-2"></i>Помощь
+                </h5>
+                <ul class="list-unstyled d-flex flex-column gap-2">
+                    <li><a href="#" class="text-white text-decoration-none opacity-75">FAQ</a></li>
+                    <li><a href="#" class="text-white text-decoration-none opacity-75">Поддержка</a></li>
+                    <li><a href="#" class="text-white text-decoration-none opacity-75">Блог</a></li>
+                    <li><a href="#" class="text-white text-decoration-none opacity-75">Сертификаты</a></li>
+                    <li><a href="#" class="text-white text-decoration-none opacity-75">Партнёры</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <h5 class="text-uppercase fw-bold mb-3">
+                    <i class="fa-solid fa-address-book me-2"></i>Контакты
+                </h5>
+                <ul class="list-unstyled d-flex flex-column gap-3">
+                    <li>
+                        <a href="tel:88005553535" class="text-white text-decoration-none d-flex align-items-center gap-2 opacity-75">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>8 (800) 555-35-35</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:ronimizy@itmo.ru" class="text-white text-decoration-none d-flex align-items-center gap-2 opacity-75">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>ronimizy@itmo.ru</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <h5 class="text-uppercase fw-bold mb-3">
+                    <i class="fa-solid fa-share-nodes me-2"></i>Мы в соцсетях
+                </h5>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-white fs-5 opacity-75" title="Telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                    <a href="#" class="text-white fs-5 opacity-75" title="VK">
+                        <i class="fa-brands fa-vk"></i>
+                    </a>
+                    <a href="#" class="text-white fs-5 opacity-75" title="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="#" class="text-white fs-5 opacity-75" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-top border-secondary mt-4 pt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <span class="text-white-50">
+                        <i class="fa-regular fa-copyright me-1"></i>2026 VitalCourses. Все права защищены.
+                    </span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3 small">
+                        <a href="#" class="text-white-50 text-decoration-none hover-text-white">Политика конфиденциальности</a>
+                        <a href="#" class="text-white-50 text-decoration-none hover-text-white">Пользовательское соглашение</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+            <div class="modal-header border-bottom-0 pb-0">
+                <h5 class="modal-title fw-bold" id="loginModalLabel">
+                    <i class="fa-solid fa-right-to-bracket text-primary me-2"></i>Вход в аккаунт
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body pt-4">
+                <form id="loginForm" novalidate>
+                    <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="loginEmail"
+                               placeholder="name@example.com" required>
+                        <div class="invalid-feedback">Пожалуйста, введите корректный email</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="loginPassword" class="form-label">Пароль</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="loginPassword"
+                                   placeholder="••••••••" required minlength="6">
+                            <button class="btn btn-outline-secondary toggle-password"
+                                    type="button" data-target="loginPassword">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <div class="invalid-feedback">Пароль должен содержать минимум 6 символов</div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Запомнить меня</label>
+                        </div>
+                        <a href="#" class="text-decoration-none text-primary small">Забыли пароль?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 py-2">
+                        <i class="fa-solid fa-right-to-bracket me-2"></i>Войти
+                    </button>
+                </form>
+                <div class="text-center mt-4">
+                    <span class="text-muted small">Нет аккаунта?</span>
+                    <button class="btn btn-link text-decoration-none p-0 ms-1"
+                            data-bs-toggle="modal" data-bs-target="#registerModal"
+                            data-bs-dismiss="modal">
+                        Зарегистрироваться
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+            <div class="modal-header border-bottom-0 pb-0">
+                <h5 class="modal-title fw-bold" id="registerModalLabel">
+                    <i class="fa-solid fa-user-plus text-primary me-2"></i>Создать аккаунт
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body pt-4">
+                <form id="registerForm" novalidate>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="registerName" class="form-label">Имя</label>
+                            <input type="text" class="form-control" id="registerName"
+                                   placeholder="Никита" required>
+                            <div class="invalid-feedback">Пожалуйста, введите ваше имя</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="registerSurname" class="form-label">Фамилия</label>
+                            <input type="text" class="form-control" id="registerSurname"
+                                   placeholder="Дубовик" required>
+                            <div class="invalid-feedback">Пожалуйста, введите вашу фамилию</div>
+                        </div>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="registerEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="registerEmail"
+                               placeholder="name@example.com" required>
+                        <div class="invalid-feedback">Пожалуйста, введите корректный email</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="registerPassword" class="form-label">Пароль</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="registerPassword"
+                                   placeholder="Минимум 6 символов" required minlength="6">
+                            <button class="btn btn-outline-secondary toggle-password"
+                                    type="button" data-target="registerPassword">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <div class="invalid-feedback">Пароль должен содержать минимум 6 символов</div>
+                        </div>
+                        <div class="form-text small">
+                            <i class="fa-solid fa-circle-info me-1"></i>
+                            Используйте буквы, цифры и специальные символы
+                            <div class="password-strength mt-2">
+                                <div class="strength-bar"></div>
+                            </div>
+                            <small class="strength-text text-muted">Слабый пароль</small>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="registerConfirm" class="form-label">Подтвердите пароль</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="registerConfirm"
+                                   placeholder="Повторите пароль" required>
+                            <button class="btn btn-outline-secondary toggle-password"
+                                    type="button" data-target="registerConfirm">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <div class="invalid-feedback">Пароли не совпадают</div>
+                        </div>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                        <label class="form-check-label small" for="agreeTerms">
+                            Я согласен с <a href="#" class="text-primary">условиями использования</a>
+                            и <a href="#" class="text-primary">политикой конфиденциальности</a>
+                        </label>
+                        <div class="invalid-feedback d-block">
+                            Необходимо принять условия использования
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 py-2">
+                        <i class="fa-solid fa-user-plus me-2"></i>Зарегистрироваться
+                    </button>
+                </form>
+                <div class="text-center mt-4">
+                    <span class="text-muted small">Уже есть аккаунт?</span>
+                    <button class="btn btn-link text-decoration-none p-0 ms-1"
+                            data-bs-toggle="modal" data-bs-target="#loginModal"
+                            data-bs-dismiss="modal">
+                        Войти
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src='js/main.js'></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>
