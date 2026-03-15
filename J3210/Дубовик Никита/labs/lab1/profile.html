@@ -107,278 +107,278 @@
     <section class="profile-header py-5 mb-4">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-3 text-center text-md-start mb-3 mb-md-0">
-                    <div class="profile-avatar mx-auto mx-md-0">
+                <div class="col-lg-3 text-center text-lg-start mb-4 mb-lg-0">
+                    <div class="profile-avatar mx-auto mx-lg-0">
                         <i class="fa-solid fa-user"></i>
                     </div>
                 </div>
-                <div class="col-md-6 text-center text-md-start">
-                    <h1 class="text-white mb-1">Никита Дубовик</h1>
-                    <p class="text-white-50 mb-0"><i class="fa-solid fa-envelope me-1"></i> nikita.dubovik@example.com</p>
-                    <p class="text-white-50 small"><i class="fa-solid fa-calendar me-1"></i> На платформе с января 2026</p>
-                </div>
-            </div>
-
-            <div class="row mt-4">
-                <div class="col-6 col-md-3">
-                    <div class="stat-badge text-center text-white">
-                        <div class="h3 mb-0 fw-bold">5</div>
-                        <small class="text-white-50">Курсов куплено</small>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="stat-badge text-center text-white">
-                        <div class="h3 mb-0 fw-bold">2</div>
-                        <small class="text-white-50">Завершено</small>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="stat-badge text-center text-white">
-                        <div class="h3 mb-0 fw-bold">3</div>
-                        <small class="text-white-50">В процессе</small>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="stat-badge text-center text-white">
-                        <div class="h3 mb-0 fw-bold">114</div>
-                        <small class="text-white-50">Часов обучения</small>
+                <div class="col-lg-9">
+                    <h1 class="text-white fw-bold mb-2">Никита Дубовик</h1>
+                    <p class="text-white-50 mb-3">
+                        <i class="fa-solid fa-envelope me-2"></i>nikita.dubovik@example.com
+                        <span class="mx-3">|</span>
+                        <i class="fa-solid fa-calendar me-2"></i>На платформе с января 2026
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <div class="stat-badge px-4 py-2 text-white">
+                            <div class="fw-bold fs-4 mb-0">5</div>
+                            <small class="text-white-50">Курсов куплено</small>
+                        </div>
+                        <div class="stat-badge px-4 py-2 text-white">
+                            <div class="fw-bold fs-4 mb-0">2</div>
+                            <small class="text-white-50">Завершено</small>
+                        </div>
+                        <div class="stat-badge px-4 py-2 text-white">
+                            <div class="fw-bold fs-4 mb-0">3</div>
+                            <small class="text-white-50">В процессе</small>
+                        </div>
+                        <div class="stat-badge px-4 py-2 text-white">
+                            <div class="fw-bold fs-4 mb-0">114</div>
+                            <small class="text-white-50">Часов обучения</small>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="container mb-5">
-        <ul class="nav nav-pills nav-pills-custom mb-4" id="profileTabs" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="courses-tab" data-bs-toggle="pill" data-bs-target="#courses" type="button">
-                    <i class="fa-solid fa-book me-2"></i>Мои курсы
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="certificates-tab" data-bs-toggle="pill" data-bs-target="#certificates" type="button">
-                    <i class="fa-solid fa-certificate me-2"></i>Сертификаты
-                </button>
-            </li>
-        </ul>
-
-        <div class="tab-content" id="profileTabsContent">
-            <div class="tab-pane fade show active" id="courses" role="tabpanel">
-                <h4 class="section-title mb-4">Активные курсы</h4>
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="course-card h-100">
-                            <div class="card-body p-4">
-                                <div class="d-flex justify-content-between align-items-start mb-3">
-                                    <span class="badge badge-soft-primary">Deep Learning</span>
-                                    <span class="badge badge-soft-warning">В процессе</span>
-                                </div>
-                                <h5 class="mb-2">Deep Learning: от MLP до GPT</h5>
-                                <div class="mb-2">
-                                    <div class="d-flex justify-content-between small mb-1">
-                                        <span>Прогресс</span>
-                                        <span class="fw-medium">75%</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 75%"></div>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between small text-muted mb-3">
-                                    <span><i class="fa-regular fa-clock me-1"></i>32/42 ч</span>
-                                    <span><i class="fa-solid fa-layer-group me-1"></i>18/24 урока</span>
-                                </div>
-                                <a href="#" class="btn btn-primary w-100">
-                                    <i class="fa-solid fa-play me-1"></i> Продолжить
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="course-card h-100">
-                            <div class="card-body p-4">
-                                <div class="d-flex justify-content-between align-items-start mb-3">
-                                    <span class="badge badge-soft-primary">NLP</span>
-                                    <span class="badge badge-soft-warning">В процессе</span>
-                                </div>
-                                <h5 class="mb-2">NLP: Понимание естественного языка</h5>
-                                <div class="mb-2">
-                                    <div class="d-flex justify-content-between small mb-1">
-                                        <span>Прогресс</span>
-                                        <span class="fw-medium">45%</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 45%"></div>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between small text-muted mb-3">
-                                    <span><i class="fa-regular fa-clock me-1"></i>16/36 ч</span>
-                                    <span><i class="fa-solid fa-layer-group me-1"></i>9/20 урока</span>
-                                </div>
-                                <a href="#" class="btn btn-primary w-100">
-                                    <i class="fa-solid fa-play me-1"></i> Продолжить
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="course-card h-100">
-                            <div class="card-body p-4">
-                                <div class="d-flex justify-content-between align-items-start mb-3">
-                                    <span class="badge badge-soft-primary">Computer Vision</span>
-                                    <span class="badge badge-soft-warning">В процессе</span>
-                                </div>
-                                <h5 class="mb-2">Computer Vision: Зрение для ИИ</h5>
-                                <div class="mb-2">
-                                    <div class="d-flex justify-content-between small mb-1">
-                                        <span>Прогресс</span>
-                                        <span class="fw-medium">20%</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 20%"></div>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between small text-muted mb-3">
-                                    <span><i class="fa-regular fa-clock me-1"></i>6/30 ч</span>
-                                    <span><i class="fa-solid fa-layer-group me-1"></i>3/15 урока</span>
-                                </div>
-                                <a href="#" class="btn btn-primary w-100">
-                                    <i class="fa-solid fa-play me-1"></i> Продолжить
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h4 class="section-title mb-4 mt-5">Завершённые курсы</h4>
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="course-card h-100 opacity-75">
-                            <div class="card-body p-4">
-                                <div class="d-flex justify-content-between align-items-start mb-3">
-                                    <span class="badge badge-soft-primary">Основы ML</span>
-                                    <span class="badge badge-soft-success"><i class="fa-solid fa-check me-1"></i>Завершено</span>
-                                </div>
-                                <h5 class="mb-2">Машинное обучение для начинающих</h5>
-                                <div class="mb-2">
-                                    <div class="d-flex justify-content-between small mb-1">
-                                        <span>Прогресс</span>
-                                        <span class="fw-medium text-success">100%</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%"></div>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between small text-muted mb-3">
-                                    <span><i class="fa-regular fa-clock me-1"></i>20/20 ч</span>
-                                    <span><i class="fa-solid fa-certificate me-1"></i>Сертификат получен</span>
-                                </div>
-                                <a href="#" class="btn btn-outline-success w-100">
-                                    <i class="fa-solid fa-certificate me-1"></i> Скачать сертификат
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="course-card h-100 opacity-75">
-                            <div class="card-body p-4">
-                                <div class="d-flex justify-content-between align-items-start mb-3">
-                                    <span class="badge badge-soft-primary">Python</span>
-                                    <span class="badge badge-soft-success"><i class="fa-solid fa-check me-1"></i>Завершено</span>
-                                </div>
-                                <h5 class="mb-2">Python для Data Science</h5>
-                                <div class="mb-2">
-                                    <div class="d-flex justify-content-between small mb-1">
-                                        <span>Прогресс</span>
-                                        <span class="fw-medium text-success">100%</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%"></div>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between small text-muted mb-3">
-                                    <span><i class="fa-regular fa-clock me-1"></i>40/40 ч</span>
-                                    <span><i class="fa-solid fa-certificate me-1"></i>Сертификат получен</span>
-                                </div>
-                                <a href="#" class="btn btn-outline-success w-100">
-                                    <i class="fa-solid fa-certificate me-1"></i> Скачать сертификат
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="container mb-5">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <ul class="nav nav-pills nav-pills-custom gap-2" id="profileTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active px-4 py-2" id="courses-tab" data-bs-toggle="pill" data-bs-target="#courses" type="button" role="tab">
+                            <i class="fa-solid fa-book me-2"></i>Мои курсы
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link px-4 py-2" id="certificates-tab" data-bs-toggle="pill" data-bs-target="#certificates" type="button" role="tab">
+                            <i class="fa-solid fa-certificate me-2"></i>Сертификаты
+                        </button>
+                    </li>
+                </ul>
             </div>
 
-            <div class="tab-pane fade" id="certificates" role="tabpanel">
-                <h4 class="section-title mb-4">Мои сертификаты</h4>
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="certificate-card p-4">
-                            <div class="text-center mb-3">
-                                <i class="fa-solid fa-certificate fa-3x text-primary mb-3"></i>
-                                <h5 class="mb-1">Сертификат о завершении</h5>
-                                <p class="text-muted small">Машинное обучение для начинающих</p>
-                            </div>
-                            <div class="border-top border-bottom py-3 mb-3">
-                                <div class="row text-center">
-                                    <div class="col-4">
-                                        <small class="text-muted d-block">Выдан</small>
-                                        <strong>15.02.2026</strong>
+            <div class="tab-content" id="profileTabsContent">
+
+                <div class="tab-pane fade show active" id="courses" role="tabpanel">
+                    <h3 class="fw-bold mb-4">Активные курсы</h3>
+
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card course-card h-100 d-flex flex-column">
+                                <div class="card-body p-4 d-flex flex-column">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <span class="badge badge-soft-primary">Deep Learning</span>
+                                        <span class="badge badge-soft-warning">В процессе</span>
                                     </div>
-                                    <div class="col-4">
-                                        <small class="text-muted d-block">Часов</small>
-                                        <strong>20 ч</strong>
+                                    <h5>Deep Learning: от MLP до GPT</h5>
+                                    <div class="mb-2">
+                                        <div class="d-flex justify-content-between small mb-1">
+                                            <span>Прогресс</span>
+                                            <span class="fw-medium">75%</span>
+                                        </div>
+                                        <div class="progress" style="height: 6px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                                        </div>
                                     </div>
-                                    <div class="col-4">
-                                        <small class="text-muted d-block">Оценка</small>
-                                        <strong>5.0</strong>
+                                    <div class="d-flex justify-content-between small text-muted mb-3">
+                                        <span><i class="fa-regular fa-clock me-1"></i>32/42 ч</span>
+                                        <span><i class="fa-solid fa-layer-group me-1"></i>18/24 урока</span>
                                     </div>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">
+                                        <i class="fa-solid fa-play me-1"></i> Продолжить
+                                    </a>
                                 </div>
                             </div>
-                            <div class="d-grid gap-2">
-                                <button class="btn btn-primary btn-sm">
-                                    <i class="fa-solid fa-download me-1"></i> Скачать PDF
-                                </button>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card course-card h-100 d-flex flex-column">
+                                <div class="card-body p-4 d-flex flex-column">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <span class="badge badge-soft-primary">NLP</span>
+                                        <span class="badge badge-soft-warning">В процессе</span>
+                                    </div>
+                                    <h5>NLP: Понимание естественного языка</h5>
+                                    <div class="mb-2">
+                                        <div class="d-flex justify-content-between small mb-1">
+                                            <span>Прогресс</span>
+                                            <span class="fw-medium">45%</span>
+                                        </div>
+                                        <div class="progress" style="height: 6px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 45%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between small text-muted mb-3">
+                                        <span><i class="fa-regular fa-clock me-1"></i>16/36 ч</span>
+                                        <span><i class="fa-solid fa-layer-group me-1"></i>9/20 урока</span>
+                                    </div>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">
+                                        <i class="fa-solid fa-play me-1"></i> Продолжить
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card course-card h-100 d-flex flex-column">
+                                <div class="card-body p-4 d-flex flex-column">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <span class="badge badge-soft-primary">Computer Vision</span>
+                                        <span class="badge badge-soft-warning">В процессе</span>
+                                    </div>
+                                    <h5>Computer Vision: Зрение для ИИ</h5>
+                                    <div class="mb-2">
+                                        <div class="d-flex justify-content-between small mb-1">
+                                            <span>Прогресс</span>
+                                            <span class="fw-medium">20%</span>
+                                        </div>
+                                        <div class="progress" style="height: 6px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 20%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between small text-muted mb-3">
+                                        <span><i class="fa-regular fa-clock me-1"></i>6/30 ч</span>
+                                        <span><i class="fa-solid fa-layer-group me-1"></i>3/15 урока</span>
+                                    </div>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">
+                                        <i class="fa-solid fa-play me-1"></i> Продолжить
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
-                        <div class="certificate-card p-4">
-                            <div class="text-center mb-3">
-                                <i class="fa-solid fa-certificate fa-3x text-primary mb-3"></i>
-                                <h5 class="mb-1">Сертификат о завершении</h5>
-                                <p class="text-muted small">Python для Data Science</p>
-                            </div>
-                            <div class="border-top border-bottom py-3 mb-3">
-                                <div class="row text-center">
-                                    <div class="col-4">
-                                        <small class="text-muted d-block">Выдан</small>
-                                        <strong>10.01.2026</strong>
+                    <h3 class="fw-bold mb-4 mt-5">Завершённые курсы</h3>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card course-card h-100 opacity-75 d-flex flex-column">
+                                <div class="card-body p-4 d-flex flex-column">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <span class="badge badge-soft-primary">Основы ML</span>
+                                        <span class="badge badge-soft-success"><i class="fa-solid fa-check me-1"></i>Завершено</span>
                                     </div>
-                                    <div class="col-4">
-                                        <small class="text-muted d-block">Часов</small>
-                                        <strong>40 ч</strong>
+                                    <h5>Машинное обучение для начинающих</h5>
+                                    <div class="mb-2">
+                                        <div class="d-flex justify-content-between small mb-1">
+                                            <span>Прогресс</span>
+                                            <span class="fw-medium text-success">100%</span>
+                                        </div>
+                                        <div class="progress" style="height: 6px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%"></div>
+                                        </div>
                                     </div>
-                                    <div class="col-4">
-                                        <small class="text-muted d-block">Оценка</small>
-                                        <strong>4.9</strong>
+                                    <div class="d-flex justify-content-between small text-muted mb-3">
+                                        <span><i class="fa-regular fa-clock me-1"></i>20/20 ч</span>
+                                        <span><i class="fa-solid fa-certificate me-1"></i>Сертификат получен</span>
                                     </div>
+                                    <a href="#" class="btn btn-outline-success w-100 mt-auto">
+                                        <i class="fa-solid fa-certificate me-1"></i> Скачать сертификат
+                                    </a>
                                 </div>
                             </div>
-                            <div class="d-grid gap-2">
-                                <button class="btn btn-primary btn-sm">
-                                    <i class="fa-solid fa-download me-1"></i> Скачать PDF
-                                </button>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card course-card h-100 opacity-75 d-flex flex-column">
+                                <div class="card-body p-4 d-flex flex-column">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <span class="badge badge-soft-primary">Python</span>
+                                        <span class="badge badge-soft-success"><i class="fa-solid fa-check me-1"></i>Завершено</span>
+                                    </div>
+                                    <h5>Python для Data Science</h5>
+                                    <div class="mb-2">
+                                        <div class="d-flex justify-content-between small mb-1">
+                                            <span>Прогресс</span>
+                                            <span class="fw-medium text-success">100%</span>
+                                        </div>
+                                        <div class="progress" style="height: 6px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between small text-muted mb-3">
+                                        <span><i class="fa-regular fa-clock me-1"></i>40/40 ч</span>
+                                        <span><i class="fa-solid fa-certificate me-1"></i>Сертификат получен</span>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-success w-100 mt-auto">
+                                        <i class="fa-solid fa-certificate me-1"></i> Скачать сертификат
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="certificates" role="tabpanel">
+                    <h3 class="fw-bold mb-4">Мои сертификаты</h3>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="certificate-card p-4">
+                                <div class="text-center mb-3">
+                                    <i class="fa-solid fa-certificate fa-3x text-primary mb-3"></i>
+                                    <h5 class="mb-1">Сертификат о завершении</h5>
+                                    <p class="text-muted small">Машинное обучение для начинающих</p>
+                                </div>
+                                <div class="border-top border-bottom py-3 mb-3">
+                                    <div class="row text-center">
+                                        <div class="col-4">
+                                            <small class="text-muted d-block">Выдан</small>
+                                            <strong>15.02.2026</strong>
+                                        </div>
+                                        <div class="col-4">
+                                            <small class="text-muted d-block">Часов</small>
+                                            <strong>20 ч</strong>
+                                        </div>
+                                        <div class="col-4">
+                                            <small class="text-muted d-block">Оценка</small>
+                                            <strong>5.0</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary btn-sm">
+                                        <i class="fa-solid fa-download me-1"></i> Скачать PDF
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="certificate-card p-4">
+                                <div class="text-center mb-3">
+                                    <i class="fa-solid fa-certificate fa-3x text-primary mb-3"></i>
+                                    <h5 class="mb-1">Сертификат о завершении</h5>
+                                    <p class="text-muted small">Python для Data Science</p>
+                                </div>
+                                <div class="border-top border-bottom py-3 mb-3">
+                                    <div class="row text-center">
+                                        <div class="col-4">
+                                            <small class="text-muted d-block">Выдан</small>
+                                            <strong>10.01.2026</strong>
+                                        </div>
+                                        <div class="col-4">
+                                            <small class="text-muted d-block">Часов</small>
+                                            <strong>40 ч</strong>
+                                        </div>
+                                        <div class="col-4">
+                                            <small class="text-muted d-block">Оценка</small>
+                                            <strong>4.9</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary btn-sm">
+                                        <i class="fa-solid fa-download me-1"></i> Скачать PDF
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </main>
 
 <footer class="mt-auto py-5 bg-dark text-white">
